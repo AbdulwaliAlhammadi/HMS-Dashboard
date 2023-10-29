@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary my-1">
       <div className="container container-fluid">
-        <a className="navbar-brand" href="index.html">
+        <a className="navbar-brand" href="#">
           HMS Dashboard
         </a>
         <div>
