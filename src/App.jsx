@@ -1,4 +1,4 @@
-import MiniDrawer from './components/sidebar'
+import MiniDrawer from "./components/sidebar";
 
 function App() {
   return (
@@ -6,4 +6,12 @@ function App() {
   )
 }
 
-export default App
+// import { bedChartData } from "./js/variablesState";
+
+// const App = () => (
+//   <div>
+//     <button onClick={() => {bedChartData.value = [...bedChartData.value,[1]]}}>{bedChartData}</button>
+//   </div>
+// );
+
+export default App;
