@@ -33,6 +33,9 @@ export class RoomPieChart extends Component {
             },
           },
         },
+        legend: {
+          position: 'bottom'
+        }
       },
     };
   }
