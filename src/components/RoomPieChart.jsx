@@ -25,10 +25,14 @@ export class RoomPieChart extends Component {
           events: {
             dataPointSelection: (e, chart, opts) => {
               var selectedPoints = chart.w.globals.selectedDataPoints[0][0];
+              
               if (selectedPoints !== undefined) {
                 const data = getRoomDetailsByIndex(selectedPoints);
                 bedChartData.value = data.map(({ name, data }) => ({ name, data }));
                 bedChartLabels.value = data.map(({ xlabels }) => xlabels)[0];
+              }else{
+                bedChartData.value = [];
+                bedChartLabels.value= [];
               }
             },
           },
